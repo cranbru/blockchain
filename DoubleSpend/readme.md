@@ -282,41 +282,9 @@ double_spend_analysis.py
     └── Summary table
 ```
 
-## 🎯 Use Cases
-
-### Academic Research
-- Validate theoretical models with empirical simulations
-- Analyze security of alternative consensus mechanisms
-- Study the economics of blockchain attacks
-
-### Industry Applications
-- Set appropriate confirmation thresholds for exchanges
-- Risk assessment for payment processors
-- Security audits for blockchain applications
-
-### Educational Purposes
-- Teach blockchain security concepts
-- Demonstrate GPU programming techniques
-- Illustrate probability and statistics applications
-
-## 📅 Future Enhancements
-
-### Planned Features
-1. **Real-time Analysis**
-   - Connect to Bitcoin node for live network statistics
-   - Dynamic adjustment based on current hash rate
-
-2. **Extended Attack Models**
-   - Selfish mining strategies
-   - Eclipse attacks
-   - Time-warp attacks
-
-3. **Multi-chain Support**
-   - Ethereum (pre and post-merge)
-   - Bitcoin Cash, Litecoin, etc.
-   - Comparative analysis across chains
 
 4. **Interactive Dashboard**
    - Web-based interface using Dash/Streamlit
    - Real-time parameter adjustment
    - Export custom reports
+
