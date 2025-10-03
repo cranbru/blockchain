@@ -5,7 +5,7 @@ This script analyzes the probability of successful double-spend attacks on the B
 using both analytical methods (Nakamoto's formula) and GPU-accelerated Monte Carlo simulations.
 """
 
-import cupy as cp   # GPU-accelerated NumPy
+import cupy as cp  
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -17,11 +17,11 @@ from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
 
-# For reproducibility
+# for reproducibility
 np.random.seed(42)
 cp.random.seed(42)
 
-# Set publication-quality plot parameters
+#parameter settings for report generation
 plt.rcParams['font.size'] = 10
 plt.rcParams['axes.labelsize'] = 11
 plt.rcParams['axes.titlesize'] = 12
@@ -262,12 +262,11 @@ def main():
     # -------------------------------------------------------------------
     print("\nGenerating visualizations...")
     
-    # Create figure with multiple subplots
-    fig = plt.figure(figsize=(16, 12))
+    fig = plt.figure(figsize=(18, 14))  # Increased from (16, 12)
     fig.suptitle("Bitcoin Double-Spend Attack Analysis: Comprehensive Study", 
-                 fontsize=16, fontweight='bold', y=1.02)
-    
-    gs = GridSpec(3, 3, figure=fig, hspace=0.3, wspace=0.35)
+                fontsize=16, fontweight='bold', y=0.995)  # Adjusted from y=1.02
+
+    gs = GridSpec(3, 3, figure=fig, hspace=0.5, wspace=0.45)  # Increased spacing
     
     # Color scheme
     colors = plt.cm.viridis(np.linspace(0, 0.9, len(qs)))
